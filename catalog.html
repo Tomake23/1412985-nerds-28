@@ -16,14 +16,33 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="index.html">Контакты</a></li>
        </ul>
-       <a href="index.html"><img src="img/cart-icon.svg" width="15" height="15">Корзина</a>
+       <input type="image" src="img/cart-icon.svg" alt="Корзина" width="15" height="15">
+       <a href="index.html">Корзина</a>
      </nav> 
    </header> 
    <main>
      <h1>Магазин готовых шаблонов</h1>
      <section>
        <h2>Фильтр</h2>
-       <form action="https://echo.htmlacademy.ru" method="get">        
+       <form action="https://echo.htmlacademy.ru" method="get"> 
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <div>
+              <div>Фильтр по ценам</div>
+                <div class="price" data-v-469cfe6c>
+                  <input type="range" max="15000" min="0" value="0"> 
+                  <input type="range" max="15000" min="0" value="15000">
+                </div> 
+                <div class="value-price-first">
+                  <p>от</p>
+                  <output name="value-price-first" value="" class="value-price-first">0</output>
+                </div>
+                <div class="value-price-final">
+                  <p>до</p>
+                  <output name="value-price-final" value="" class="value-price-final">15000</output>
+                </div>
+            </div>
+          </fieldset>       
          <fieldset>
            <legend>Сетка:</legend>
             <ul>
@@ -74,11 +93,15 @@
            <span>По цене</span>
          </a>
          <a href="#">
-           <span>По типу</span>
+           <button class="by_type">По типу</button>
          </a>
          <a href="#">
-           <span>По названию</span>
+           <button class="by_name">По названию</button>
          </a>
+        </div>
+        <div>
+          <input type="image" src="img/icon-down-dir.svg" alt="Стрелочка вверх">
+          <input type="image" src="img/icon-up-dir.svg" alt="Стрелочка вниз">
         </div>
      </section>     
      <section>
