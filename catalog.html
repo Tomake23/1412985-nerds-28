@@ -16,8 +16,7 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="index.html">Контакты</a></li>
        </ul>
-       <input type="image" src="img/cart-icon.svg" alt="Корзина" width="15" height="15">
-       <a href="index.html">Корзина</a>
+       <a href="index.html"><img src="img/cart-icon.svg" alt="Корзина" width="15" height="15"/>Корзина</a>
      </nav> 
    </header> 
    <main>
@@ -27,21 +26,27 @@
        <form action="https://echo.htmlacademy.ru" method="get"> 
           <fieldset>
             <legend>Стоимость:</legend>
-            <div>
-              <div>Фильтр по ценам</div>
-                <div class="price" data-v-469cfe6c>
-                  <input type="range" max="15000" min="0" value="0"> 
-                  <input type="range" max="15000" min="0" value="15000">
-                </div> 
-                <div class="value-price-first">
-                  <p>от</p>
-                  <output name="value-price-first" value="" class="value-price-first">0</output>
-                </div>
-                <div class="value-price-final">
-                  <p>до</p>
-                  <output name="value-price-final" value="" class="value-price-final">15000</output>
-                </div>
-            </div>
+            <div class="price">
+                  <div class="container">
+                    <div class="slider">
+                      <div class="track"></div>
+                    </div>
+                    <div class="output"> </div>
+                    <div class="thumb"></div>
+                    <div class="output_1"> </div>
+                    <div class="thumb_1"></div>
+                  </div>
+                <div class="values">
+                  <div class="groups">
+                    <label class="from">От</label>
+                    <input type="text" value="0" id="from">
+                  </div>
+                  <div class="groups">
+                    <label class="to">До</label>
+                    <input type="text" value="15000" id="to">
+                  </div>
+                </div>  
+             </div>   
           </fieldset>       
          <fieldset>
            <legend>Сетка:</legend>
@@ -89,15 +94,9 @@
         </form>
        <div>
          <span>Сортировать:</span>
-         <a href="#">
            <span>По цене</span>
-         </a>
-         <a href="#">
            <button class="by_type">По типу</button>
-         </a>
-         <a href="#">
            <button class="by_name">По названию</button>
-         </a>
         </div>
         <div>
           <input type="image" src="img/icon-down-dir.svg" alt="Стрелочка вверх">
