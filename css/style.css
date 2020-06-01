@@ -1,0 +1,223 @@
+:root {
+ --basic-black: #000000;
+ --basic-white: #ffffff;
+ --basic-extra-gray: #eeeeee;
+ --basic-red: #FB565A;
+ --special: #4D4D4D;
+ --special1: #283136;
+}
+body {
+  min-width: 1460px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*navigation*/
+.main-header {
+  background-color: var(--basic-extra-gray);
+}
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--basic-extra-gray);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-black);
+}
+.subject {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+  background-color: var(--basic-extra-gray);
+}
+/* User navigation */
+
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: var(--basic-red);
+}
+/* Features */
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.feature-item img {
+  background-color: var(--basic-extra-gray);
+}
+.feature-item p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+/*Filter*/
+.filter legend {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 19px;
+  font-size: 16px;
+  color: var(--special);
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--special1);
+}
+.filter-input-radio:hover + label,
+.filter-input-radio:focus + label {
+  color: var(--special1);
+}
+/*Buttons*/
+button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.button-order1,
+.button-order2,
+.button-order3 {
+  border-radius: 3px;
+  width: 160px;
+  height: 50px;
+}
+.button-order1 {
+  background-color: #FB565A;
+}
+.button-order2{
+  background-color: #00CA74;
+}
+.button-order3 {
+  background-color: #EFC849;
+}
+.button-order1:hover,
+.button-order1:focus {
+  background-color: #E74246;
+}
+.button-order1:active {
+  background-color: #D7373B;
+}
+.button-order2:hover,
+.button-order2:focus {
+  background-color: #00BC6C;
+}
+.button-order2:active{
+  background-color: #00AA62;
+}
+.button-order3:hover,
+.button-order3:focus {
+  background-color: #EAB534;
+}
+.button-order3:active{
+  background-color: #EAB534;
+}
+.button-show {
+  width: 260px;
+  height: 50px;
+  background-color: var(--basic-extra-gray);
+  border-radius: 3px;
+  color: var(--basic-black);
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+/*FOOTER*/
+.footer-social {
+  background-color: var(--basic-white);
+}
+
+.footer-social ul {
+  list-style: none;
+  }
+
+.footer-social h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+.footer-social p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.main-footer {
+  color: var(--basic-black);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+/*Product*/
+.template {
+  background-color: var(--basic-white);
+}
+.image {
+  width: 360px;
+  height: 580px;
+  background: #F2F2F2; 
+}
+.popup {
+  width: 360px;
+  height: 231px;
+  background: var(--basic-extra-gray);
+
+}
+.popup h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.popup p {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #666666;
+}
