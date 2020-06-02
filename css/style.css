@@ -4,7 +4,7 @@
  --basic-extra-gray: #eeeeee;
  --basic-red: #FB565A;
  --special: #4D4D4D;
- --special1: #283136;
+ --basic-dark-grey: #283136;
 }
 body {
   min-width: 1460px;
@@ -86,7 +86,7 @@ img {
   line-height: 24px;
 }
 /*Filter*/
-.filter legend {
+.filter .title {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -103,27 +103,23 @@ img {
 
 .filter-input-checkbox:hover + label,
 .filter-input-checkbox:focus + label {
-  color: var(--special1);
+  color: var(--basic-dark-grey);
 }
 .filter-input-radio:hover + label,
 .filter-input-radio:focus + label {
-  color: var(--special1);
+  color: var(--basic-dark-grey);
 }
 /*Buttons*/
-button {
+
+.button-order {
+  width: 160px;
+  height: 50px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-.button-order1,
-.button-order2,
-.button-order3 {
-  border-radius: 3px;
-  width: 160px;
-  height: 50px;
 }
 .button-order1 {
   background-color: #FB565A;
@@ -155,11 +151,27 @@ button {
 .button-order3:active{
   background-color: #EAB534;
 }
+.button-price {
+  width: 200px;
+  height: 50px;
+  background: var(--basic-red);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--basic-white);
+}
+.button-price:hover,
+.button-price:focus {
+  background-color: #E74246;
+}
+.button-price:active {
+  background-color:  #D7373B;
+}
 .button-show {
   width: 260px;
   height: 50px;
   background-color: var(--basic-extra-gray);
-  border-radius: 3px;
   color: var(--basic-black);
   text-align: center;
   font-weight: 500;
@@ -173,11 +185,16 @@ button {
 .button-show:active{
   background-color:#D5D5D5;
 }
+
 /*FOOTER*/
 .footer-social {
   background-color: var(--basic-white);
 }
-
+.down,
+.up {
+  background-color: var(--basic-white);
+  border: none;
+}
 .footer-social ul {
   list-style: none;
   }

@@ -33,8 +33,8 @@
      <section class="filters">
        <h2 class="visually-hidden">Фильтр</h2>
        <form class="filter" action="https://echo.htmlacademy.ru" method="get"> 
-          <fieldset>
-            <legend>Стоимость:</legend>
+          <fieldset class="filter">
+            <legend class="title">Стоимость:</legend>
             <div class="price">
                 <div class="container">
                   <div class="slider">
@@ -55,8 +55,8 @@
                 </div>  
              </div>   
           </fieldset>       
-         <fieldset>
-           <legend class="filter">Сетка:</legend>
+         <fieldset class="filter">
+           <legend class="title">Сетка:</legend>
             <ul>
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
@@ -72,8 +72,8 @@
               </li>
             </ul>
          </fieldset>
-          <fieldset>
-           <legend class="filter">Особенности:</legend>
+          <fieldset class="filter">
+           <legend class="title">Особенности:</legend>
            <ul>
              <li class="filter-option filter-checkbox">
                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
@@ -113,9 +113,15 @@
            </li>
          </ul>
         </div>
-        <div>
-          <input type="image" src="img/icon-down-dir.svg" alt="Стрелочка вверх">
-          <input type="image" src="img/icon-up-dir.svg" alt="Стрелочка вниз">
+        <div class="control">
+          <button class="down">
+            <img class="down" src="img/icon-down-dir.svg" alt="Стрелочка вниз">
+            <div class="visually-hidden">Стрелочка вниз</div>
+          </button>
+          <button class="up">
+            <img src="img/icon-up-dir.svg" alt="Стрелочка вверх">
+            <div class="visually-hidden">Стрелочка вверх</div>
+          </button>
         </div>
      </section>     
      <section class="template">
@@ -137,7 +143,7 @@
                   Информационный сайт<br>
                   для туристов
                 </p>
-                <button type="button" class="button-order1">9 900₽</button>
+                <button type="button" class="button-price">9 900₽</button>
             </div>           
          </li>
          <li>
@@ -156,7 +162,7 @@
                   Продуктовый лендинг<br>
                   приложения для IOS и Android
                 </p>
-                <button type="button" class="button-order1">9 900₽</button>
+                <button type="button" class="button-price">9 900₽</button>
              </div>  
          </li>
          <li>
@@ -175,7 +181,7 @@
                 Сайт салона красоты.<br>
                 Для мужчин, да.
              </p>
-             <button type="button" class="button-order1">9 900₽</button>
+             <button type="button" class="button-price">9 900₽</button>
            </div>  
          </li>
          <li>
@@ -194,7 +200,7 @@
                  Интернет-магазин<br>
                  вязаных игрушек
               </p>
-              <button type="button" class="button-order1">9 900₽</button>
+              <button type="button" class="button-price">9 900₽</button>
             </div>            
          </li>
          <li>
@@ -213,7 +219,7 @@
                 Лендинг курсов повышения<br>
                 квалификации
               </p>
-              <button type="button" class="button-order1">9 900₽</button>
+              <button type="button" class="button-price">9 900₽</button>
             </div>   
          </li>
          <li>
@@ -232,7 +238,7 @@
                 Промо-сайт<br>
                 крафтового кваса
               </p>
-              <button type="button" class="button-order1">9 900₽</button>
+              <button type="button" class="button-price">9 900₽</button>
             </div>
          </li>
        </ul>
