@@ -166,6 +166,13 @@ button {
   font-size: 16px;
   line-height: 18px;
 }
+.button-show:hover,
+.button-show:focus {
+  background-color: #DFDFDF;
+}
+.button-show:active{
+  background-color:#D5D5D5;
+}
 /*FOOTER*/
 .footer-social {
   background-color: var(--basic-white);
