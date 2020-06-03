@@ -64,6 +64,8 @@ img {
 .user-navigation a:hover,
 .user-navigation a:focus {
   color: var(--basic-red);
+  outline: none;
+  cursor: pointer;
 }
 /* Features */
 
@@ -120,6 +122,8 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  border-radius: 3px;
+  border: none;
 }
 .button-order1 {
   background-color: #FB565A;
@@ -160,6 +164,8 @@ img {
   font-weight: 500;
   font-size: 16px;
   color: var(--basic-white);
+  border-radius: 3px;
+  border: none;
 }
 .button-price:hover,
 .button-price:focus {
@@ -177,10 +183,14 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  border-radius: 3px;
+  border: none;
 }
 .button-show:hover,
 .button-show:focus {
   background-color: #DFDFDF;
+  outline: none;
+  cursor: pointer;
 }
 .button-show:active{
   background-color:#D5D5D5;
@@ -192,8 +202,10 @@ img {
 }
 .down,
 .up {
-  background-color: var(--basic-white);
+  background-color: transparent;
   border: none;
+  outline: none;
+  cursor: pointer;
 }
 .footer-social ul {
   list-style: none;
