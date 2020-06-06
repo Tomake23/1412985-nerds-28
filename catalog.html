@@ -46,11 +46,11 @@
                 <div class="values">
                   <div class="groups">
                     <label class="from">От</label>
-                    <input type="text" value="0" id="from">
+                    <input class="value-from" type="text" value="0" id="from">
                   </div>
                   <div class="groups">
                     <label class="to">До</label>
-                    <input type="text" value="15000" id="to">
+                    <input class="value-to" type="text" value="15000" id="to">
                   </div>
                 </div>  
              </div>   
@@ -99,11 +99,11 @@
          </fieldset>        
           <button class="button-show" type="submit">Показать</button>          
         </form>
-       <div>
-         <h2>Сортировать:</h2>
+       <div class="sorting">
+         <h2 class="title">Сортировать:</h2>
          <ul>
            <li>
-             <span>По цене</span>
+             <span class="active by_price">По цене</span>
            </li>
            <li>
              <button class="by_type">По типу</button>
@@ -242,34 +242,34 @@
             </div>
          </li>
        </ul>
-       <ul>
-        <li>
+       <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current">
           <a>1</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a href="#">2</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a href="#">3</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a href="#">4</a>
         </li>
-        <li>
+        <li class="pagination-item next-page">
           <a href="#">Следующая</a>
         </li>
       </ul>
      </section>
    </main>   
    <footer class="page-footer main-footer">
-    <section>
+    <section class="contacts">
       <h2>NЁRDS DESIGN STUDIO</h2>
       <p>
         191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8<br>
         тел. +7 (812) 275-75-75
       </p>
-        <a href="">Напишите нам</a>
+        <a href=""></a><button class="button-write" type="button">Напишите нам</button></a>
     </section>
     <section class="footer-contacts">
       <img src="img/map.png" alt="Карта" width="1440" height="416"/>
