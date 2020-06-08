@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-   <body>
+   <body class="page-body">
    <header class="main-header">
      <nav class="main-navigation">
        <a class="main-header-logo">
@@ -29,14 +29,14 @@
       </nav>
       <h1 class="subject">Магазин готовых шаблонов</h1> 
    </header> 
-   <main>
+   <main class="page-catalog container">
      <section class="filters">
        <h2 class="visually-hidden">Фильтр</h2>
        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get"> 
           <fieldset class="filter">
             <legend class="title">Стоимость:</legend>
             <div class="price">
-                <div class="container">
+                <div class="container-price">
                   <div class="slider-price">
                     <div class="track"></div>
                   </div>
@@ -126,8 +126,8 @@
      </section>     
      <section class="template">
        <h2 class="visually-hidden">Шаблоны</h2>
-       <ul>
-         <li>           
+       <ul class="template-list">
+         <li class="template-item">           
             <h3 class="visually-hidden">Шаблон Sedona</h3>
             <div class="slider-template">
               <img src="img/browser.svg" alt="Слайдер" width="360" height="40">
@@ -146,7 +146,7 @@
                 <button type="button" class="button-price">9 900₽</button>
             </div>           
          </li>
-         <li>
+         <li class="template-item">
              <h3 class="visually-hidden">Pink</h3>
              <div class="slider-template">
                <img src="img/browser.svg" alt="Слайдер" width="360" height="40">
@@ -165,7 +165,7 @@
                 <button type="button" class="button-price">9 900₽</button>
              </div>  
          </li>
-         <li>
+         <li class="template-item">
            <h3 class="visually-hidden">Барбершоп</h3>
            <div class="slider-template">
              <img src="img/browser.svg" alt="Слайдер" width="360" height="40">
@@ -184,7 +184,7 @@
              <button type="button" class="button-price">9 900₽</button>
            </div>  
          </li>
-         <li>
+         <li class="template-item">
              <h3 class="visually-hidden">Mishka</h3>
              <div class="slider-template">
                <img src="img/browser.svg" alt="Слайдер" width="360" height="40"> 
@@ -203,7 +203,7 @@
               <button type="button" class="button-price">9 900₽</button>
             </div>            
          </li>
-         <li>
+         <li class="template-item">
             <h3 class="visually-hidden">Учёба</h3>
             <div class="slider-template">
               <img src="img/browser.svg" alt="Слайдер" width="360" height="40">
@@ -222,7 +222,7 @@
               <button type="button" class="button-price">9 900₽</button>
             </div>   
          </li>
-         <li>
+         <li class="template-item">
             <h3 class="visually-hidden">Кваст</h3>
             <div class="slider-template">
               <img src="img/browser.svg" alt="Слайдер" width="360" height="40">
@@ -274,30 +274,34 @@
     <section class="footer-contacts">
       <img src="img/map.png" alt="Карта" width="1440" height="416"/>
     </section>
-    <section class="footer-social">
-     <h2>Давайте дружить, это выгодно!</h2>
-     <p>Скидка 10% для друзей из социальных сетей.</p>
-     <ul>
-       <li>
-          <a href="" class="social-button">
-            <img src="img/vk.svg" alt="Вконтакте" width="81" height="81"/>
-            <span>Вконтакте</span>
-          </a>
-        </li>
-        <li>
-         <a href="" class="social-button">
-           <img src="img/fb.svg" alt="Фейсбук" width="81" height="81"/>
-           <span>Фейсбук</span>
-         </a>
-        </li>
-        <li>
-         <a href="" class="social-button">
-           <img src="img/insta.svg" alt="Инстаграм" width="81" height="81"/>
-           <span>Инстаграм</span>
-         </a>
-       </li>
-     </ul>
-   </section>
+    <div class="container">
+      <section class="footer-slogan">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+      <section class="footer-social">
+        <ul>
+          <li>
+            <a href="" class="social-button">
+              <img src="img/vk.svg" alt="Вконтакте" width="81" height="81"/>
+              <span>Вконтакте</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="social-button">
+              <img src="img/fb.svg" alt="Фейсбук" width="81" height="81"/>
+              <span>Фейсбук</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="social-button">
+              <img src="img/insta.svg" alt="Инстаграм" width="81" height="81"/>
+              <span>Инстаграм</span>
+            </a>
+          </li>
+        </ul>
+      </section>            
+    </div>
  </footer>
  <section>
    <h2>Напишите нам</h2>
