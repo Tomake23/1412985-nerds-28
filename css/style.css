@@ -177,7 +177,7 @@ img {
   color: var(--basic-black);
 }
 .container-price {
-  width: 260px;;
+  width: 260px;
   height: 80px;
   background-color: var(--basic-extra-gray);
 }
@@ -462,8 +462,8 @@ img {
 }
 .slider-template {
   background-color: var(--basic-extra-gray);
-  width: 350px;
-  height: 40 px;
+  width: 360px;
+  height: 40px;
   margin-bottom: 0;
 }
 /*description*/
