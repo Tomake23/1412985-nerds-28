@@ -9,12 +9,12 @@
   </head>
    <body class="page-body">
    <header class="main-header">
-     <nav class="main-navigation">
-       <a class="main-header-logo">
+     <nav class="main-navigation container">
+       <a href="index.html" class="main-header-logo">
          <img src="img/nerds-logo.svg"  alt="Логотип Нёрдс" width="160" height="65"/>
        </a>
        <div class="navigation-href">
-         <div class="container">
+         <div>
            <ul class="site-navigation">
              <li><a href="index.html">Студия</a></li>
              <li><a href="index.html">Клиенты</a></li>
@@ -27,31 +27,29 @@
          </div>
        </div>
       </nav>
-      <h1 class="subject">Магазин готовых шаблонов</h1> 
+      <h1 class="subject container">Магазин готовых шаблонов</h1> 
    </header> 
    <main class="page-catalog container">
      <section class="filters">
        <h2 class="visually-hidden">Фильтр</h2>
        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get"> 
-          <fieldset class="filter">
+          <fieldset class="filter filter-item">
             <legend class="title">Стоимость:</legend>
-            <div class="price">
-                <div class="container-price">
-                  <div class="slider-price">
-                    <div class="track"></div>
+            <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
                   </div>
-                  <div class="thumb"></div>
-                  <div class="thumb_1"></div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
                 </div>
-                <div class="values">
-                  <div class="groups">
-                    <label class="from">От</label>
-                    <input class="value-from" type="text" value="0" id="from">
-                  </div>
-                  <div class="groups">
-                    <label class="to">До</label>
-                    <input class="value-to" type="text" value="15000" id="to">
-                  </div>
+                <div class="price-controls">
+                  <label class="min-price">От
+                    <input type="number" name="min-price" value="0">
+                  </label>                  
+                  <label class="max-price">До
+                    <input type="number" name="max-price" value="15000">
+                  </label>
                 </div>  
              </div>   
           </fieldset>       
@@ -143,7 +141,7 @@
                   Информационный сайт<br>
                   для туристов
                 </p>
-                <button type="button" class="button-price">9 900₽</button>
+                <button type="button" class="button-price">9 900 ₽</button>
             </div>           
          </li>
          <li class="template-item">
@@ -152,7 +150,7 @@
                <img src="img/browser.svg" alt="Слайдер" width="360" height="40">
              </div>
              <div class="image">
-               <img src="img/pink.jpg" alt="Pink" width="360" height="578"/>
+               <img src="img/pink.jpg" alt="Pink" width="360" height="580"/>
              </div>
              <div class="popup">
                 <a href="product.html">
@@ -162,7 +160,7 @@
                   Продуктовый лендинг<br>
                   приложения для IOS и Android
                 </p>
-                <button type="button" class="button-price">9 900₽</button>
+                <button type="button" class="button-price">9 900 ₽</button>
              </div>  
          </li>
          <li class="template-item">
@@ -171,7 +169,7 @@
              <img src="img/browser.svg" alt="Слайдер" width="360" height="40">
            </div>
            <div class="image">
-             <img src="img/burber.jpg" alt="Барбершоп Бородинский" width="360" height="578"/>
+             <img src="img/burber.jpg" alt="Барбершоп Бородинский" width="360" height="580"/>
            </div>
            <div class="popup">
              <a href="product.html">
@@ -181,7 +179,7 @@
                 Сайт салона красоты.<br>
                 Для мужчин, да.
              </p>
-             <button type="button" class="button-price">9 900₽</button>
+             <button type="button" class="button-price">9 900 ₽</button>
            </div>  
          </li>
          <li class="template-item">
@@ -190,7 +188,7 @@
                <img src="img/browser.svg" alt="Слайдер" width="360" height="40"> 
              </div>
              <div class="image">
-               <img src="img/mishka.svg" alt="Магазин Мишка" width="360" height="578"/>
+               <img src="img/mishka.svg" alt="Магазин Мишка" width="360" height="580"/>
              </div>
             <div class="popup">
               <a href="product.html">
@@ -200,7 +198,7 @@
                  Интернет-магазин<br>
                  вязаных игрушек
               </p>
-              <button type="button" class="button-price">9 900₽</button>
+              <button type="button" class="button-price">9 900 ₽</button>
             </div>            
          </li>
          <li class="template-item">
@@ -209,7 +207,7 @@
               <img src="img/browser.svg" alt="Слайдер" width="360" height="40">
             </div>
             <div>
-              <img src="img/online-learning.jpg" alt="Сайт для учёбы" width="360" height="578"/>
+              <img src="img/online-learning.jpg" alt="Сайт для учёбы" width="360" height="580"/>
             </div>     
             <div class="popup">
               <a href="product.html">
@@ -219,7 +217,7 @@
                 Лендинг курсов повышения<br>
                 квалификации
               </p>
-              <button type="button" class="button-price">9 900₽</button>
+              <button type="button" class="button-price">9 900 ₽</button>
             </div>   
          </li>
          <li class="template-item">
@@ -228,7 +226,7 @@
               <img src="img/browser.svg" alt="Слайдер" width="360" height="40">
             </div>
             <div>
-              <img src="img/kvast.jpg" alt="Магазаин Кваса" width="360" height="578"/>
+              <img src="img/kvast.jpg" alt="Магазаин Кваса" width="360" height="580"/>
             </div>
             <div class="popup">
               <a href="product.html">
@@ -238,7 +236,7 @@
                 Промо-сайт<br>
                 крафтового кваса
               </p>
-              <button type="button" class="button-price">9 900₽</button>
+              <button type="button" class="button-price">9 900 ₽</button>
             </div>
          </li>
        </ul>
@@ -261,7 +259,7 @@
       </ul>
      </section>
    </main>   
-   <footer class="page-footer main-footer">
+   <footer class="page-footer main-footer container">
     <section class="contacts">
       <h2>NЁRDS DESIGN STUDIO</h2>
       <p>
@@ -282,45 +280,45 @@
       <section class="footer-social">
         <ul>
           <li>
-            <a href="" class="social-button">
-              <img src="img/vk.svg" alt="Вконтакте" width="81" height="81"/>
-              <span>Вконтакте</span>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg width="26" height="15" viewBox="0 0 128 76"><path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
             </a>
           </li>
           <li>
-            <a href="" class="social-button">
-              <img src="img/fb.svg" alt="Фейсбук" width="81" height="81"/>
-              <span>Фейсбук</span>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg width="12" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
             </a>
           </li>
           <li>
-            <a href="" class="social-button">
-              <img src="img/insta.svg" alt="Инстаграм" width="81" height="81"/>
-              <span>Инстаграм</span>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg width="21" height="21" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
             </a>
           </li>
         </ul>
-      </section>            
+      </section>           
     </div>
  </footer>
- <section>
+ <section class="modal container">
    <h2>Напишите нам</h2>
-   <form action="https://echo.htmlacademy.ru" method="post">
+   <form class="comment-form" action="https://echo.htmlacademy.ru" method="post">
      <div>
        <label for="name">Ваше имя:</label>
-       <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+       <input class="name" id="name" type="text" name="name" placeholder="Имя Фамилия">
      </div>
      <div>
        <label for="mail">Ваш e-mail:</label>
-       <input id="mail" type="email" name="mail" placeholder="email@example.com">
+       <input class="mail" id="mail" type="email" name="mail" placeholder="email@example.com">
      </div>
      <div>
       <label for="comment">Текст письма:</label>
       <textarea id="comment" name="comments" placeholder="В свободной форме"></textarea>
      </div>
-     <button type="submit">Отправить</button>
+     <button class="submit button-order" type="submit">Отправить</button>
    </form>
-   <button type="button">Закрыть</button>
+   <button class="visually-hidden" type="button">Закрыть</button>
 </section>
 </body>
 </html>
