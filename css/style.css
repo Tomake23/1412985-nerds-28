@@ -156,7 +156,13 @@ img {
   line-height: 24px;
 }
 /*Filter*/
-
+.filters {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+}
+.filter-form {
+  margin-top: 55px;
+}
 .filters fieldset {
   padding: 0;
   margin: 0;
@@ -247,12 +253,41 @@ img {
   border-radius: 5px;
   background: #f1f1f1;
 }
+
+.sorting {
+ display: grid;
+ grid-template-columns: 400px 400px;
+ padding: 0px;
+ margin: 0px;
+ margin-top: 55px;
+ margin-bottom: 50px;;
+}
+.sorting h2 {
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+}
 .sorting ul {
   list-style: none;
+  display: flex;
+  margin: 0;
+  margin-right: 25px;
+  padding: 0px;
+  margin-top: 5px;
 }
-.sorting .by_type,
-.sorting .by_name,
-.sorting .by_price {
+.sorting li:not(:last-of-type) {
+  margin-right: 25px;
+}
+.sorting-navigation {
+  display: flex;
+  
+}
+.by_type,
+.by_name,
+.by_prices {
   font-size: 14px;
   line-height: 18px;
   align-items: center;
@@ -262,6 +297,19 @@ img {
   background-color: transparent;
   outline: none;
   cursor: pointer;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+.by_type:hover,
+.by_name:hover,
+.by_prices:hover {
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.by_type:active,
+.by_name:active,
+.by_prices:active {
+  opacity: 1;
 }
 .filter ul {
   list-style: none;
@@ -422,6 +470,8 @@ img {
   border: none;
   outline: none;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
 .footer-social ul {
   list-style: none;
@@ -456,6 +506,7 @@ border-radius: 50%;
 .template {
   background-color: var(--basic-white); 
   margin-left: 140px; 
+  margin-top: 133px;
 }
 .template-list {
   display: flex;
@@ -751,4 +802,17 @@ border-radius: 50%;
   width: 259px;
   height: 50px;
 }
- 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

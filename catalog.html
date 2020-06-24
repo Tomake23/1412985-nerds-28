@@ -97,30 +97,34 @@
          </fieldset>        
           <button class="button-show" type="submit">Показать</button>          
         </form>
-       <div class="sorting">
-         <h2 class="title">Сортировать:</h2>
-         <ul>
-           <li>
-             <span class="active by_price">По цене</span>
-           </li>
-           <li>
-             <button class="by_type">По типу</button>
-           </li>
-           <li>
-             <button class="by_name">По названию</button>
-           </li>
-         </ul>
-        </div>
-        <div class="control">
-          <button class="down">
-            <img class="down" src="img/icon-down-dir.svg" alt="Стрелочка вниз">
-            <div class="visually-hidden">Стрелочка вниз</div>
-          </button>
-          <button class="up">
-            <img src="img/icon-up-dir.svg" alt="Стрелочка вверх">
-            <div class="visually-hidden">Стрелочка вверх</div>
-          </button>
-        </div>
+        <div class="block-sorting">
+          <div class="sorting">
+            <h2 class="title">Сортировать:</h2>
+            <div class="sorting-navigation"> 
+              <ul>
+                <li>
+                  <button class="active by_prices">По цене</button>
+                </li>
+                <li>
+                  <button class="by_type">По типу</button>
+                </li>
+                <li>
+                  <button class="by_name">По названию</button>
+                </li>
+              </ul>
+              <div class="control">
+                <button class="down">
+                  <img class="down" src="img/icon-down-dir.svg" alt="Стрелочка вниз">
+                  <div class="visually-hidden">Стрелочка вниз</div>
+                </button>
+                <button class="up">
+                  <img src="img/icon-up-dir.svg" alt="Стрелочка вверх">
+                  <div class="visually-hidden">Стрелочка вверх</div>
+                </button>
+              </div>
+            </div>                        
+         </div>
+        </div>       
      </section>     
      <section class="template">
        <h2 class="visually-hidden">Шаблоны</h2>
@@ -318,7 +322,7 @@
      </div>
      <button class="submit button-order" type="submit">Отправить</button>
    </form>
-   <button class="visually-hidden" type="button">Закрыть</button>
+   <button class="closed" type="button">Закрыть</button>
 </section>
 </body>
 </html>
