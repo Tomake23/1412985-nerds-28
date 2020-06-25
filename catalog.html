@@ -18,7 +18,7 @@
            <ul class="site-navigation">
              <li><a href="index.html">Студия</a></li>
              <li><a href="index.html">Клиенты</a></li>
-             <li><a href="catalog.html">Магазин</a></li>
+             <li><a class="active" href="catalog.html">Магазин</a></li>
              <li><a href="index.html">Контакты</a></li>
            </ul>
            <div class="user-navigation">
@@ -308,19 +308,19 @@
  <section class="modal container">
    <h2>Напишите нам</h2>
    <form class="comment-form" action="https://echo.htmlacademy.ru" method="post">
-     <div>
+     <div class="name-block">
        <label for="name">Ваше имя:</label>
        <input class="name" id="name" type="text" name="name" placeholder="Имя Фамилия">
      </div>
-     <div>
+     <div class="mail-block">
        <label for="mail">Ваш e-mail:</label>
        <input class="mail" id="mail" type="email" name="mail" placeholder="email@example.com">
      </div>
-     <div>
-      <label for="comment">Текст письма:</label>
-      <textarea id="comment" name="comments" placeholder="В свободной форме"></textarea>
-     </div>
-     <button class="submit button-order" type="submit">Отправить</button>
+     <div class="comment">
+        <label for="comment">Текст письма:</label>
+        <textarea id="comment" name="comments" placeholder="В свободной форме"></textarea>
+        <button class="submit button-order" type="submit">Отправить</button>
+     </div>     
    </form>
    <button class="closed" type="button">Закрыть</button>
 </section>
