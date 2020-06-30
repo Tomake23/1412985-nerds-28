@@ -22,12 +22,14 @@
              <li><a href="index.html">Контакты</a></li>
            </ul>
            <div class="user-navigation">
-            <a href="index.html"><img src="img/cart-icon.svg" alt="Корзина" width="15" height="15"/>Корзина</a> 
+            <a href="index.html"><img class="basket" src="img/cart-icon.svg" alt="Корзина" width="15" height="15"/>Корзина</a> 
            </div>
          </div>
-       </div>
+       </div>       
       </nav>
-      <h1 class="subject container">Магазин готовых шаблонов</h1> 
+      <div class="container">
+        <h1 class="subject">Магазин готовых шаблонов</h1> 
+      </div>      
    </header> 
    <main class="page-catalog container">
      <section class="filters">
@@ -113,7 +115,7 @@
                 </li>
               </ul>
               <div class="control">
-                <button class="down">
+                <button class="active down">
                   <img class="down" src="img/icon-down-dir.svg" alt="Стрелочка вниз">
                   <div class="visually-hidden">Стрелочка вниз</div>
                 </button>
@@ -121,8 +123,8 @@
                   <img src="img/icon-up-dir.svg" alt="Стрелочка вверх">
                   <div class="visually-hidden">Стрелочка вверх</div>
                 </button>
-              </div>
-            </div>                        
+              </div>              
+            </div>                                    
          </div>
         </div>       
      </section>     
@@ -131,7 +133,7 @@
        <ul class="template-list">
          <li class="template-item">           
             <h3 class="visually-hidden">Шаблон Sedona</h3>
-            <div class="slider-template">
+            <div class="active slider-template">
               <img src="img/browser.svg" alt="Слайдер" width="360" height="40">
             </div>
             <div class="image">
@@ -244,23 +246,22 @@
             </div>
          </li>
        </ul>
-       <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current">
-          <a>1</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">4</a>
-        </li>
-        <li class="pagination-item next-page">
-          <a href="#">Следующая</a>
-        </li>
-      </ul>
+       <div class="block-pagination-list" >
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current">
+              <a>1</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">3</a>
+            </li>
+            <li class="pagination-item next-page">
+              <a href="#">Следующая</a>
+            </li>
+          </ul>
+       </div>       
      </section>
    </main>   
    <footer class="page-footer main-footer container">
@@ -269,6 +270,7 @@
       <p>
         191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8<br>
+        <br>
         тел. +7 (812) 275-75-75
       </p>
       <button class="button-write" type="button">Напишите нам</button>
@@ -276,7 +278,7 @@
     <section class="footer-contacts">
       <img src="img/map.png" alt="Карта" width="1440" height="416"/>
     </section>
-    <div class="container">
+    <div class="social-footer container">
       <section class="footer-slogan">
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -305,7 +307,7 @@
       </section>           
     </div>
  </footer>
- <section class="modal container">
+ <section class="modal modal-catolog container">
    <h2>Напишите нам</h2>
    <form class="comment-form" action="https://echo.htmlacademy.ru" method="post">
      <div class="name-block">
@@ -322,7 +324,7 @@
         <button class="submit button-order" type="submit">Отправить</button>
      </div>     
    </form>
-   <button class="closed" type="button">Закрыть</button>
+   <button class="modal-close" type="button">Закрыть</button>
 </section>
 </body>
 </html>
