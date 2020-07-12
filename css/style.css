@@ -372,10 +372,11 @@ margin: 0;
 
 .sorting {
 	display: grid;
-	grid-template-columns: 400px 400px;
+	grid-template-columns: 394px 404px;
 	padding: 0px;
 	margin-bottom: 50px;
 	margin-left: 140px;
+	margin-top: 1px;
 }
 
 .sorting .title {
@@ -392,9 +393,8 @@ margin: 0;
 	list-style: none;
 	display: flex;
 	margin: 0;
-	margin-right: 47px;
+	margin-right: 37px;
 	padding: 0px;
-	margin-top: 5px;
 }
 
 .sorting-navigation {
@@ -402,8 +402,8 @@ margin: 0;
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: flex-start;
+	margin-left: 0px;
 }
-
 
 .control .up {
 	margin-left: 18px;
@@ -433,6 +433,14 @@ margin: 0;
 	cursor: pointer;
 	mix-blend-mode: normal;
 	opacity: 0.3;
+}
+
+.by_prices {
+	margin-right: 8px;
+}
+
+.by_type {
+	margin-right: 12px;
 }
 
 .by_type:hover,
